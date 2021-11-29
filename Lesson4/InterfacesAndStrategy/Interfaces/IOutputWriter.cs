@@ -12,6 +12,5 @@ namespace InterfacesAndStrategy.Interfaces
         void UserWarning(string message);
         void UserError(string message);
         void Debug(string message);
-
     }
 }

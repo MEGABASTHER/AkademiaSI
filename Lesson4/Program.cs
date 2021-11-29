@@ -3,15 +3,18 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using InterfacesAndStrategy;
+using InterfacesAndStrategy.Writers;
+using InterfacesAndStrategy.Triggers;
 
-namespace Lesson4
+namespace InterfacesAndStrategy
 {
     class Program
     {
         static void Main(string[] args)
         {
-            ConsoleOutputWriter.Debug("aaa");
+            Run StartProgram = new Run();
+
+            StartProgram.DoIt();
         }
     }
 }

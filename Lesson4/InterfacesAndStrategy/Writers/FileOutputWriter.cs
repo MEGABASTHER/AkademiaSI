@@ -13,8 +13,7 @@ namespace InterfacesAndStrategy.Writers
         private readonly FileService _fileService;
 
         private string _mainPath;
-        private string _filename;
-        private string _text;
+        private string _fileName;
 
         public void Debug(string message)
         {
@@ -22,7 +21,7 @@ namespace InterfacesAndStrategy.Writers
             _fileName = "Debug.txt";
             message = "e";
 
-            _fileService.SaveToFile(_mainPath, _filename, message);
+            _fileService.SaveToFile(_mainPath, _fileName, message);
 
         }
 
@@ -32,7 +31,7 @@ namespace InterfacesAndStrategy.Writers
             _fileName = "UserError.txt";
             message = "f";
 
-            _fileService.SaveToFile(_mainPath, _filename, message);
+            _fileService.SaveToFile(_mainPath, _fileName, message);
         }
 
         public void UserInfo(string message)
@@ -41,7 +40,7 @@ namespace InterfacesAndStrategy.Writers
             _fileName = "UserInfo.txt";
             message = "g";
 
-            _fileService.SaveToFile(_mainPath, _filename, message);
+            _fileService.SaveToFile(_mainPath, _fileName, message);
         }
 
         public void UserWarning(string message)
@@ -50,7 +49,7 @@ namespace InterfacesAndStrategy.Writers
             _fileName = "UserWarning.txt";
             message = "h";
 
-            _fileService.SaveToFile(_mainPath, _filename, message);
+            _fileService.SaveToFile(_mainPath, _fileName, message);
         }
     }
 }

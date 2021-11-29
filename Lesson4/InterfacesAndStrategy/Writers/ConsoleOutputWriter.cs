@@ -12,8 +12,6 @@ namespace InterfacesAndStrategy.Writers
     {
         private readonly PrintService _printService;
 
-        private string _text;
-
         public void Debug(string message)
         {
             message = "a";

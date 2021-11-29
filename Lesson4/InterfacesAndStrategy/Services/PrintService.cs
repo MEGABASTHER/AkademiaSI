@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using System.IO;
 
 namespace InterfacesAndStrategy.Services
-
+{
     public class PrintService
     {
         public void PrintText(string text)
@@ -14,3 +14,4 @@ namespace InterfacesAndStrategy.Services
             Console.WriteLine(text);
         }
     }
+}
